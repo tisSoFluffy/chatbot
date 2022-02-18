@@ -39,6 +39,30 @@
         {"tag": "complaint",
         "patterns": ["have a complaint", "I want to raise a complaint", "there is a complaint about a service"],
         "responses": ["All questions can be directed to the trashcan (I can't help you here!", "I can only direct you tu websites. If you don't like it, let my assistant know"]
+        },
+        {"tag": "commerce",
+        "patterns": ["e-commerce", "I want to do cloudc computing", "commerce", "i want to make money"],
+        "responses": ["/products/commerce", "/products/commerce"]
+        },
+        {"tag": "customer",
+        "patterns": ["have a complaint", "I want to raise a complaint", "there is a complaint about a service"],
+        "responses": ["All questions can be directed to the trashcan (I can't help you here!", "I can only direct you tu websites. If you don't like it, let my assistant know"]
+        },
+        {"tag": "cloud",
+        "patterns": ["have a complaint", "I want to raise a complaint", "there is a complaint about a service"],
+        "responses": ["All questions can be directed to the trashcan (I can't help you here!", "I can only direct you tu websites. If you don't like it, let my assistant know"]
+        },
+        {"tag": "service",
+        "patterns": ["have a complaint", "I want to raise a complaint", "there is a complaint about a service"],
+        "responses": ["All questions can be directed to the trashcan (I can't help you here!", "I can only direct you tu websites. If you don't like it, let my assistant know"]
+        },
+        {"tag": "sales",
+        "patterns": ["have a complaint", "I want to raise a complaint", "there is a complaint about a service"],
+        "responses": ["All questions can be directed to the trashcan (I can't help you here!", "I can only direct you tu websites. If you don't like it, let my assistant know"]
+        },
+        {"tag": "hr/employee",
+        "patterns": ["have a complaint", "I want to raise a complaint", "there is a complaint about a service"],
+        "responses": ["All questions can be directed to the trashcan (I can't help you here!", "I can only direct you tu websites. If you don't like it, let my assistant know"]
         }
     ]
     }

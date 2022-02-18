@@ -1,5 +1,5 @@
 from libraries import nltk, lemmatizer, np, random
-from chat_init import classes, intents, words, model
+from chat_init import classes, c_intents, words, model
 
 def clean_up_sentence(sentence):
     sentence_words = nltk.word_tokenize(sentence)
@@ -29,7 +29,7 @@ def predict_class(sentence, model):
     print(p)
     res = model.predict(np.array([p]))[0]
     #parameter
-    ERROR_THRESHOLD = 0.4
+    ERROR_THRESHOLD = 0.3
     results = [[i,r] for i,r in enumerate(res) if r>ERROR_THRESHOLD]
     # sort by strength of probability
     results.sort(key=lambda x: x[1], reverse=True)
@@ -53,5 +53,5 @@ def getResponse(ints, intents_json):
 
 def chatbot_response(msg):
     ints = predict_class(msg, model)
-    res = getResponse(ints, intents)
+    res = getResponse(ints, c_intents)
     return res

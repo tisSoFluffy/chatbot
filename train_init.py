@@ -1,5 +1,6 @@
 from words import words, documents, classes
 from libraries import lemmatizer, random, np
+from sklearn.model_selection import train_test_split
 
 # initializing training data
 training = []
@@ -27,6 +28,12 @@ for doc in documents:
 random.shuffle(training)
 training = np.array(training)
 # create train and test lists. X - patterns, Y - intents
-train_x = list(training[:,0])
-train_y = list(training[:,1])
+#train_x = list(training[:,0])
+#train_y = list(training[:,1])
+
+X = list(training[:,0])
+y = list(training[:,1])
+train_x, test_x, train_y, test_y = train_test_split(X,y, test_size=0.33, random_state=42)
+
+
 print("Training data created")

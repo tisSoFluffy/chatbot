@@ -1,8 +1,8 @@
 from libraries import np
-
+import tensorflow as tf
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.optimizers import SGD
-from tensorflow.keras.layers import Dense, Activation, Dropout
+from tensorflow.keras.optimizers import SGD, Adam
+from tensorflow.keras.layers import Dense, Activation, Dropout, Embedding
 import train_init
 from train_init import train_x, train_y, test_x, test_y
 

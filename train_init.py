@@ -37,3 +37,14 @@ train_x, test_x, train_y, test_y = train_test_split(X,y, test_size=0.33, random_
 
 
 print("Training data created")
+
+#encoder = tf.keras.layers.experimental.preprocessing.TextVectorization()
+#encoder.adapt()
+
+vocab = []
+for doc in documents:
+    for word in doc[0]:
+        root_word = lemmatizer.lemmatize(word.lower())
+        if root_word not in vocab: vocab.append(root_word)
+
+len(vocab)

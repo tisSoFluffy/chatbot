@@ -51,6 +51,7 @@ def getResponse(ints, intents_json):
             break
     return result
 
+#Starter Method
 def chatbot_response(msg):
     ints = predict_class(msg, model)
     res = getResponse(ints, c_intents)
